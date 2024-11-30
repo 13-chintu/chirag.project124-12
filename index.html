@@ -1,11 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>    
+
+    <!-- Hariharan -->
+    <section>
+       <header>
+            <nav class="bg-white text-black">
+                <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+                    <i class="fa-brands fa-figma" class="text-2xl"></i>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="bg-red-800 px-3 rounded-lg hover:text-blue-300 pt-2">Products</a>
+                        <a href="#" class="hover:text-blue-300 pt-2">Solutions</a>
+                        <a href="#" class="hover:text-blue-300 pt-2">Community</a>
+                        <a href="#" class="hover:text-blue-300 pt-2">Resources</a>
+                        <a href="#" class="hover:text-blue-300 pt-2">Pricing</a>
+                        <a href="#" class="hover:text-blue-300 pt-2">Contact</a>
+                        <button class="px-4 py-1 bg-stone-300 text-black rounded-lg">
+                            Sign In
+                        </button>
+                        <button class="px-2 py-2 bg-black text-red-800 rounded-lg">
+                            Primary
+                        </button>
+                    </div>
+                    <button id="menu-toggle" class="md:hidden focus:outline-none">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="hidden md:hidden bg-white">
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Products</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Solutions</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Community</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Resourcers</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Pricing</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-blue-800">Contact</a>
+                </div>
+            </nav>
     
-</body>
+            <section class="bg-red-800 h-screen flex flex-col items-center justify-center space-y-6">
+                <h1 class="text-black text-5xl font-bold">Title</h1>
+                <h3 class="text-stone-400 text-3xl">Subtitle</h3>
+                <div class="flex space-x-4">
+                    <button class="bg-white text-black px-6 py-2 rounded-lg hover:scale-150">
+                        Button 1
+                    </button>
+                    <button class="bg-black text-red-800 px-6 py-2 rounded-lg hover:scale-150">
+                        Button 2
+                    </button>
+                </div>
+            </section>
+    
+    
+            <!-- Added Script file for navbar toggle button for mobile  -->
+            <script>
+    
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+    
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
+    
+        </header>    
+    </section>
+
+
+<!-- Chirag -->
+    <section class="bg-rose-400">
+        <diV>
+            <h2 class="text-2xl font-bold">Heading</h2>
+            <h3 class="text-xl text-orange-200">Subheading</h3>
+        
+        </diV>
+        <div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3">
+                <div class="border-2 border-gray-300 mx-4 my-2">
+                    <img class="mt-[10px] border-2" src="" alt="image" height="100px" width="100px">
+                    <div class="pt-[10px]">
+                        <h class="font-bold">Title</h>
+                    </div>
+                    <div class="mt-[10px]">
+                        <p>Body text for whatever you'd like to say.Add main takeaway points, quotes, anecdotes, or even a very very sort story.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 mx-4 my-2">
+                    <img class="mt-[10px] border-2" src="" alt="image" height="100px" width="100px">
+                    <div class="mt-[10px]">
+                        <h class="font-bold">Title</h>
+                    </div>
+                    <div class="mt-[10px]">
+                        <p>Body text for whatever you'd like to say.Add main takeaway points, quotes, anecdotes, or even a very very sort story.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 mx-4 my-2">
+                    <img class="mt-[10px] border-2" src="" alt="image" height="100px" width="100px">
+                    <div class="mt-[10px]">
+                        <h class="font-bold">Title</h>
+                    </div>
+                    <div class="mt-[10px]">
+                        <p>Body text for whatever you'd like to say.Add main takeaway points, quotes, anecdotes, or even a very very sort story.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 mx-4 my-2"> 
+                    <img class="mt-[10px] border-2" src="" alt="image" height="100px" width="100px">
+                    <div class="mt-[10px]">
+                        <h class="font-bold">Title</h>
+                    </div>
+                    <div class="mt-[10px]">
+                        <p>Body text for whatever you'd like to say.Add main takeaway points, quotes, anecdotes, or even a very very sort story.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 mx-4 my-2">
+                    <img class="mt-[10px] border-2" src="" alt="image" height="100px" width="100px">
+                    <div class="mt-[10px]">
+                        <h class="font-bold">Title</h>
+                    </div>
+                    <div class="mt-[10px]">
+                        <p>Body text for whatever you'd like to say.Add main takeaway points, quotes, anecdotes, or even a very very sort story.</p>
+                    </div>
+                </div>
+                <div class="border-2 border-gray-300 mx-4 my-2">
+                    <img class="mt-[10px] border-2" src="" alt="image" height="100px" width="100px">
+                    <div class="mt-[10px]">
+                        <h class="font-bold">Title</h>
+                    </div>
+                    <div class="mt-[10px]">
+                        <p>Body text for whatever you'd like to say.Add main takeaway points, quotes, anecdotes, or even a very very sort story.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Abhishek -->
+    <section>
+        <div class="bg-emerald-500 w-full px-12 py-8">
+            <h2 class="text-2xl font-bold">Heading</h2>
+            <h3 class="text-xl">Subheading</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 py-4 ">
+              <div class="border border-white rounded-lg py-3 px-6">
+                <h3 class="text-xl">"Quote"</h3>
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="/assets/profileImg.png"
+                    alt=""
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white rounded-lg py-3 px-6">
+                <h3 class="text-xl">"Quote"</h3>
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="/assets/profileImg.png"
+                    alt=""
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white rounded-lg py-3 px-6">
+                <h3 class="text-xl">"Quote"</h3>
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="/assets/profileImg.png"
+                    alt=""
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white rounded-lg py-3 px-6">
+                <h3 class="text-xl">"Quote"</h3>
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="/assets/profileImg.png"
+                    alt=""
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white rounded-lg py-3 px-6">
+                <h3 class="text-xl">"Quote"</h3>
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="/assets/profileImg.png"
+                    alt=""
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white rounded-lg py-3 px-6">
+                <h3 class="text-xl">"Quote"</h3>
+                <div class="flex items-center justify-start gap-2">
+                  <img
+                    src="/assets/profileImg.png"
+                    alt=""
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-emerald-500 w-full px-12 py-8 ">
+              <h2 class="text-2xl font-bold">Heading</h2>
+              <h3 class="text-xl">Subheading</h3>
+            <div class="flex flex-col gap-6 mt-4">
+              <div class="flex items-center border border-white justify-start gap-2">
+                  <img
+                    src="/assets/imgPH.jpeg"
+                    alt=""
+                    class="w-28 h-28 "
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                    <button>Button</button>
+                  </div>
+                </div><div class="flex items-center border border-white justify-start gap-2">
+                  <img
+                    src="/assets/imgPH.jpeg"
+                    alt=""
+                    class="w-28 h-28 "
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                    <button>Button</button>
+                  </div>
+                </div>
+                <div class="flex items-center border border-white justify-start gap-2">
+                  <img
+                    src="/assets/imgPH.jpeg"
+                    alt=""
+                    class="w-28 h-28 "
+                  />
+                  <div>
+                    <h4>Title</h4>
+                    <p class="text-white">Description</p>
+                    <button>Button</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- Kunal Kumar -->
+    <div class="bg-green-700">
+        <footer class="text-white p-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6">
+                <div class="flex space-x-4 items-center">
+                    <a href="#" ><i class="fa-brands fa-figma"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/almabetter/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com/@AlmaBetter"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://in.linkedin.com/company/almabetter"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- Use Cases -->
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Use cases</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:text-red-500">UI design</a></li>
+                        <li><a href="#" class="hover:text-blue-500">UX design</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Wireframing</a></li>
+                        <li><a href="#" class="hover:text-lg">Diagramming</a></li>
+                        <li><a href="#" class="hover:font-bold">Brainstorming</a></li>
+                        <li><a href="#" class="hover:underline">Online whiteboard</a></li>
+                        <li><a href="#" class="hover:underline">Team collaboration</a></li>
+                    </ul>
+                </div>
+                <!-- Explore -->
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Explore</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:underline">Design</a></li>
+                        <li><a href="#" class="hover:underline">Prototyping</a></li>
+                        <li><a href="#" class="hover:underline">Development features</a></li>
+                        <li><a href="#" class="hover:underline">Design systems</a></li>
+                        <li><a href="#" class="hover:underline">Collaboration features</a></li>
+                        <li><a href="#" class="hover:underline">Design process</a></li>
+                        <li><a href="#" class="hover:underline">FigJam</a></li>
+                    </ul>
+                </div>
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Resources</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:font-bold">Best practices</a></li>
+                        <li><a href="#" class="hover:underline">Colors</a></li>
+                        <li><a href="#" class="hover:underline">Color wheel</a></li>
+                        <li><a href="#" class="hover:underline">Support</a></li>
+                        <li><a href="#" class="hover:underline">Developers</a></li>
+                        <li><a href="#" class="hover:underline">Resource library</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </html>
+
+
+
+
+
+
+  </body>
 </html>
